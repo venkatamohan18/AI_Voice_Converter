@@ -1,0 +1,66 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Main heading */
+h1 {
+    font-size: 40px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+p {
+    font-size: 17px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+}
+
+/* Section headings */
+h2 {
+    color: #f8fafc;
+    margin-top: 35px;
+}
+
+/* Text input area */
+textarea {
+    width: 80%;
+    max-width: 500px;
+    height: 120px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}

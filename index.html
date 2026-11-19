@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Voice Converter</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<body>
+
+    <h1>AI Voice Converter</h1>
+
+    <p>Welcome to my Text-to-Speech and Speech-to-Text application!</p>
+
+    <h2>Text-to-Speech</h2>
+
+    <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+
+
+    <br><br>
+
+    
+    <button onclick="convertToSpeech()">Convert to Speech</button>
+
+
+    <button onclick="stopSpeech()">Stop Speaking</button>
+
+
+    
+    <h2>Speech-to-Text</h2>
+
+    <button id="recordButton" onclick="startRecording()">
+       Start Recording
+    </button>
+
+    <button id="stopRecordButton" onclick="stopRecording()" disabled>
+       Stop Recording
+    </button>
+
+    <p id="recordingStatus">
+       Click Start Recording to begin speaking.
+    </p>
+
+    <textarea
+       id="speechOutput"
+       placeholder="Your spoken words will appear here..."
+       readonly>
+    </textarea>
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>
+
